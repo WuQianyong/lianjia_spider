@@ -1,0 +1,364 @@
+2017-07-31 20:20:35,728 simple_log.py set_log INFO     log 目录已存在
+2017-07-31 20:20:35,728 simple_log.py set_log INFO     删除 20170726 前Log日志文件完毕！
+2017-07-31 20:20:35,728 launch.py <module> INFO     E:\personal\lianjia_spider\logfiles
+2017-07-31 20:20:35,733 log.py log_scrapy_info INFO     Scrapy 1.3.3 started (bot: scrapybot)
+2017-07-31 20:20:35,733 log.py log_scrapy_info INFO     Overridden settings: {}
+2017-07-31 20:20:35,768 middleware.py from_settings INFO     Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-07-31 20:20:35,880 middleware.py from_settings INFO     Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-31 20:20:35,883 middleware.py from_settings INFO     Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-31 20:20:36,019 middleware.py from_settings INFO     Enabled item pipelines:
+['lianjia_spider.pipelines.LianjiaSpiderPipeline']
+2017-07-31 20:20:36,019 engine.py open_spider INFO     Spider opened
+2017-07-31 20:20:36,026 pipelines.py open_spider INFO     打开管道
+2017-07-31 20:20:39,580 pipelines.py open_spider INFO     连接 MySQL  hsh_fx 成功，参数为：{'host': '66.112.216.105:3306', 'pwd': 'MICrosoft1995@vps', 'user': 'root', 'db': 'wqy', 'charset': 'utf8'}
+2017-07-31 20:20:39,580 logstats.py log INFO     Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-31 20:20:40,715 pipelines.py process_item INFO     日行情数据存储成功：西溪蓝海 2居 建面 57m² 余杭-文一西路恒生科技园向南100米 均价19000元/平
+2017-07-31 20:20:41,447 pipelines.py process_item INFO     日行情数据存储成功：金地艺境 3居 建面 90m² 余杭-南苑街道金地艺境 均价22500元/平
+2017-07-31 20:20:42,166 pipelines.py process_item INFO     日行情数据存储成功：佳兆业西溪璞园 7居/5居 建面 200~270m² 余杭-天目山西路 均价560万/套
+2017-07-31 20:20:43,063 pipelines.py process_item INFO     日行情数据存储成功：得力名望府 4居 建面 130m² 萧山-金城路与规划香樟路交接处 均价20000元/平
+2017-07-31 20:20:43,772 pipelines.py process_item INFO     日行情数据存储成功：阳光郡 4居 建面 139~178m² 拱墅-广业街浙铁阳光郡 均价28000元/平
+2017-07-31 20:20:44,475 pipelines.py process_item INFO     日行情数据存储成功：金成英特学府  余杭-天目山西路金城英特学府 均价18500元/平
+2017-07-31 20:20:45,197 pipelines.py process_item INFO     日行情数据存储成功：港汇中心 1居 建面 109m² 萧山-杭州市萧山区绿都世贸写字楼5楼 均价20000元/平
+2017-07-31 20:20:46,077 pipelines.py process_item INFO     日行情数据存储成功：中港罗兰小镇 3居 建面 109m² 余杭-中泰街道中泰路与杭泰路口西面 均价19000元/平
+2017-07-31 20:20:46,780 pipelines.py process_item INFO     日行情数据存储成功：九龙仓君玺 4居 建面 280~345m² 下城-东新路文晖路口 均价63000元/平
+2017-07-31 20:20:47,483 pipelines.py process_item INFO     日行情数据存储成功：万科大家世纪之光 4居/3居 建面 110~126m² 萧山-庆春隧道南振宁路与民和路交叉口（紧邻地铁2号线振宁路站） 均价35000元/平
+2017-07-31 20:20:48,197 pipelines.py process_item INFO     日行情数据存储成功：顺发堤香 4居 建面 172m² 萧山-金鸡路与博学路的交叉口 均价30000元/平
+2017-07-31 20:20:48,901 pipelines.py process_item INFO     日行情数据存储成功：浙港国际  西湖-紫荆花路浙港国际 均价60000元/平
+2017-07-31 20:20:49,608 pipelines.py process_item INFO     日行情数据存储成功：赞成杭家 3居 建面 89m² 余杭-洋湾路与崇文街交叉口（秋石高架石塘路口下，800米左转） 均价16500元/平
+2017-07-31 20:20:50,320 pipelines.py process_item INFO     日行情数据存储成功：绿都南江壹号 6居 建面 370m² 萧山-高桥路与晨晖路口南面 均价25000元/平
+2017-07-31 20:20:51,029 pipelines.py process_item INFO     日行情数据存储成功：富力天贸广场 2居 建面 70m² 余杭-高教路与文一西路交叉口西南（淘宝城对面） 均价21000元/平
+2017-07-31 20:20:51,908 pipelines.py process_item INFO     日行情数据存储成功：万科坤和玉泉 3居 建面 138m² 西湖-杨梅山路（和家园求是小学正南） 均价38000元/平
+2017-07-31 20:20:52,610 pipelines.py process_item INFO     日行情数据存储成功：复地黄龙和山 1居 建面 47m² 西湖-西溪路与杨梅山路交叉口 均价17500元/平
+2017-07-31 20:20:53,316 pipelines.py process_item INFO     日行情数据存储成功：华瑞晴庐 4居 建面 179m² 萧山-建设二路与育才路交叉口往东100米 均价28000元/平
+2017-07-31 20:20:54,028 pipelines.py process_item INFO     日行情数据存储成功：富亿NEO中心  江干-机场路全福桥路交叉路口 均价20000元/平
+2017-07-31 20:20:54,728 pipelines.py process_item INFO     日行情数据存储成功：杭州万达广场  拱墅-石祥路和杭行路交汇处东北方向 均价18000元/平
+2017-07-31 20:20:55,434 pipelines.py process_item INFO     日行情数据存储成功：滨江德信东方星城 4居 建面 132~139m² 江干-环站北路滨江德信东方星城 均价40000元/平
+2017-07-31 20:20:56,136 pipelines.py process_item INFO     日行情数据存储成功：绿野御墅 6居/5居 建面 411~476m² 余杭-留和路延伸段到底（绿野春天东区） 均价23000元/平
+2017-07-31 20:20:56,846 pipelines.py process_item INFO     日行情数据存储成功：玉兰花园 3居 建面 115m² 淳安-千岛湖镇新安大街２２号 均价120万/套
+2017-07-31 20:20:57,551 pipelines.py process_item INFO     日行情数据存储成功：六合浅山 4居 建面 262m² 淳安-青溪新城坪山中心区(千岛湖旅游客运中心对面) 均价12500元/平
+2017-07-31 20:20:58,264 pipelines.py process_item INFO     日行情数据存储成功：金隅空港公馆 1居 建面 55m² 下沙-钱江新城钱江国际时代广场2号楼32楼 均价14000元/平
+2017-07-31 20:20:58,973 pipelines.py process_item INFO     日行情数据存储成功：首开武林8栋 3居 建面 89~119m² 江干-德胜快速路与石桥路交叉口向北300米 均价34500元/平
+2017-07-31 20:20:59,679 pipelines.py process_item INFO     日行情数据存储成功：金地西溪风华 3居 建面 138m² 余杭-常二路金地西溪风华 均价35000元/平
+2017-07-31 20:21:00,559 pipelines.py process_item INFO     日行情数据存储成功：中栋国际 1居 建面 50~57m² 萧山-风情大道与建设一路交叉口 均价21800元/平
+2017-07-31 20:21:01,268 pipelines.py process_item INFO     日行情数据存储成功：新湖武林国际公寓 5居/4居 建面 215~225m² 下城-环城北路167号 均价65000元/平
+2017-07-31 20:21:01,990 pipelines.py process_item INFO     日行情数据存储成功：中企艮山府 5居 建面 280m² 江干-江干区章家坝云河家园6幢裙楼301室 均价32000元/平
+2017-07-31 20:21:02,703 pipelines.py process_item INFO     日行情数据存储成功：融信蓝孔雀  拱墅-石祥路与莫干山路交叉口 均价40000元/平
+2017-07-31 20:21:03,411 pipelines.py process_item INFO     日行情数据存储成功：雅居乐国际花园  余杭-余杭天目山西路258号 价格待定
+2017-07-31 20:21:04,134 pipelines.py process_item INFO     日行情数据存储成功：天地墅园  萧山-通惠北路168号1幢5楼 价格待定
+2017-07-31 20:21:04,840 pipelines.py process_item INFO     日行情数据存储成功：中大银泰城  下城-东新路与石祥路交汇处 价格待定
+2017-07-31 20:21:05,546 pipelines.py process_item INFO     日行情数据存储成功：远洋杭州大运河商务区  拱墅-大关路和丽水路交叉口 均价27000元/平
+2017-07-31 20:21:06,258 pipelines.py process_item INFO     日行情数据存储成功：绿地中央广场  拱墅-大关路与丽水路交叉口 均价28000元/平
+2017-07-31 20:21:06,960 pipelines.py process_item INFO     日行情数据存储成功：金都夏宫 3居 建面 88~121m² 余杭-北沙西路156号 均价18000元/平
+2017-07-31 20:21:07,660 pipelines.py process_item INFO     日行情数据存储成功：星运丽园兰逸 5居 建面 330m² 余杭-星桥南路131-13号 均价24000元/平
+2017-07-31 20:21:08,367 pipelines.py process_item INFO     日行情数据存储成功：浙商国际中心  江干-机场路浙商国际中心 均价24500元/平
+2017-07-31 20:21:09,072 pipelines.py process_item INFO     日行情数据存储成功：侨福一品高尔夫 3居 建面 126m² 海宁市-聆涛侨福一品高尔夫 均价14500元/平
+2017-07-31 20:21:09,775 pipelines.py process_item INFO     日行情数据存储成功：钱江之江新天地 1居 建面 35~67m² 西湖-之江路138号云栖蝶谷玉蝶苑排屋10号 均价18000元/平
+2017-07-31 20:21:10,476 pipelines.py process_item INFO     日行情数据存储成功：武林壹号 5居 建面 560m² 拱墅-湖墅南路66号 均价101200元/平
+2017-07-31 20:21:11,181 pipelines.py process_item INFO     日行情数据存储成功：科尔世纪外滩 6居/5居 建面 335~373m² 萧山-北干街道市心中路618号 均价34000元/平
+2017-07-31 20:21:12,059 pipelines.py process_item INFO     日行情数据存储成功：新城香悦奥府 4居/3居 建面 89~127m² 萧山-建设二路新城香悦奥府 均价27000元/平
+2017-07-31 20:21:12,762 pipelines.py process_item INFO     日行情数据存储成功：融创瑷骊山 6居 建面 335m² 西湖-之江国家旅游度假区象山路西 均价22000元/平
+2017-07-31 20:21:13,465 pipelines.py process_item INFO     日行情数据存储成功：世茂之西湖 3居/1居 建面 87~112m² 滨江-杭州市滨江区长河街道江晖路1961号隆和国际大厦17楼1701室 均价26000元/平
+2017-07-31 20:21:14,176 pipelines.py process_item INFO     日行情数据存储成功：富阳财富中心  富阳-迎宾北路77号财富中心五楼 均价17000元/平
+2017-07-31 20:21:14,880 pipelines.py process_item INFO     日行情数据存储成功：宝龙城市广场  下沙-杭州经济技术开发区6号大街5号2幢413室 价格待定
+2017-07-31 20:21:15,582 pipelines.py process_item INFO     日行情数据存储成功：天屿度假村 4居 建面 353m² 淳安-天屿度假村近千岛湖大桥与阳光路交界处 均价575万/套
+2017-07-31 20:21:16,286 pipelines.py process_item INFO     日行情数据存储成功：江南国际丝绸城  余杭-经济开发区临平大道733号轻纺原料市场3号楼A区 价格待定
+2017-07-31 20:21:17,002 pipelines.py process_item INFO     日行情数据存储成功：绿地华家池印  江干-环城北路东2800米（艮山西路与秋涛北路交叉口） 价格待定
+2017-07-31 20:21:18,087 pipelines.py process_item INFO     日行情数据存储成功：富力十号一期 4居 建面 125~191m² 余杭-文一西路高教路交叉口 价格待定
+2017-07-31 20:21:18,793 pipelines.py process_item INFO     日行情数据存储成功：协安蓝郡 4居 建面 175m² 余杭-古墩路与金渡北路交界处 价格待定
+2017-07-31 20:21:19,496 pipelines.py process_item INFO     日行情数据存储成功：万科北宸之光三期拱宸 4居 建面 135m² 余杭-良渚街道万科北宸之光三期拱宸 价格待定
+2017-07-31 20:21:20,196 pipelines.py process_item INFO     日行情数据存储成功：理想银泰城 1居 建面 52m² 余杭-世纪大道与迎宾路交叉口 均价17000元/平
+2017-07-31 20:21:20,897 pipelines.py process_item INFO     日行情数据存储成功：中节能西溪首座  西湖-文一西路与崇仁路交会处 均价26000元/平
+2017-07-31 20:21:21,600 pipelines.py process_item INFO     日行情数据存储成功：江滨澜廷 3居/1居 建面 52~80m² 滨江-杭州市滨江区江陵路闻涛路口悦晟中心办公区 均价31500元/平
+2017-07-31 20:21:22,312 pipelines.py process_item INFO     日行情数据存储成功：盈都江悦城 3居 建面 77~86m² 海宁市-农发区春潮路东侧、春石路北侧 均价13000元/平
+2017-07-31 20:21:23,017 pipelines.py process_item INFO     日行情数据存储成功：宋都晨光国际  下沙-16号大街宋都晨光国际 均价30000元/平
+2017-07-31 20:21:24,096 pipelines.py process_item INFO     日行情数据存储成功：融创河滨之城  西湖-花蒋路、余杭塘路向西到底，西溪银泰城西侧800米处 均价37500元/平
+2017-07-31 20:21:24,797 pipelines.py process_item INFO     日行情数据存储成功：复泰雅宸华庭 1居 建面 50m² 余杭-双后线复泰雅宸华庭 均价14000元/平
+2017-07-31 20:21:25,506 pipelines.py process_item INFO     日行情数据存储成功：复地壹中心 2居/1居 建面 50~85m² 拱墅-莫干山路与育英路交叉口 均价25000元/平
+2017-07-31 20:21:26,208 pipelines.py process_item INFO     日行情数据存储成功：恒和依山郡 2居/1居 建面 57~71m² 余杭-径山镇新207省道西侧 均价12000元/平
+2017-07-31 20:21:27,087 pipelines.py process_item INFO     日行情数据存储成功：东亚新干线 2居 建面 43m² 江干-天城路与明月桥路交叉口 均价35000元/平
+2017-07-31 20:21:27,788 pipelines.py process_item INFO     日行情数据存储成功：顺发吉祥半岛  拱墅-拱墅区永庆坊6号1幢三层北侧14室 均价50000元/平
+2017-07-31 20:21:28,505 pipelines.py process_item INFO     日行情数据存储成功：万科未来城二期 3居 建面 89~118m² 余杭-古墩路与疏港路交叉口 均价23500元/平
+2017-07-31 20:21:29,220 pipelines.py process_item INFO     日行情数据存储成功：杭钢紫元旭润和府  余杭-崇贤街道杭钢紫元旭润和府 价格待定
+2017-07-31 20:21:29,931 pipelines.py process_item INFO     日行情数据存储成功：德信君宸  萧山-建设二路德信君宸 价格待定
+2017-07-31 20:21:30,639 pipelines.py process_item INFO     日行情数据存储成功：融信江南学府 3居 建面 89~143m² 萧山-北干街道博学路与通惠中路交汇处 均价28000元/平
+2017-07-31 20:21:31,341 pipelines.py process_item INFO     日行情数据存储成功：富力西溪悦墅 4居 建面 130m² 余杭-文二西路富力西溪悦墅 均价650万/套
+2017-07-31 20:21:32,056 pipelines.py process_item INFO     日行情数据存储成功：广大融城印象  江干-丁兰路与蕙北支路交汇处 价格待定
+2017-07-31 20:21:32,761 pipelines.py process_item INFO     日行情数据存储成功：城发云锦城  江干-丁桥长睦路北段 价格待定
+2017-07-31 20:21:33,463 pipelines.py process_item INFO     日行情数据存储成功：艺尚里  余杭-南苑街道艺尚里 价格待定
+2017-07-31 20:21:34,166 pipelines.py process_item INFO     日行情数据存储成功：富力十号院  余杭-仓前街道文一西路1500号 价格待定
+2017-07-31 20:21:34,877 pipelines.py process_item INFO     日行情数据存储成功：东方御府  江干-凤起东路与御道路交叉口东南 价格待定
+2017-07-31 20:21:35,580 pipelines.py process_item INFO     日行情数据存储成功：绿城桃源小镇  余杭-余杭区河南埭 价格待定
+2017-07-31 20:21:36,285 pipelines.py process_item INFO     日行情数据存储成功：绿城运河郡  拱墅-小河路昼锦街路口 均价35000元/平
+2017-07-31 20:21:36,994 pipelines.py process_item INFO     日行情数据存储成功：钱江浙商创投中心  西湖-西溪路527号 均价30000元/平
+2017-07-31 20:21:37,700 pipelines.py process_item INFO     日行情数据存储成功：万科海上明月 4居 建面 150m² 萧山-萧山经济技术开发区启迪路198号 均价31500元/平
+2017-07-31 20:21:38,400 pipelines.py process_item INFO     日行情数据存储成功：柏润国际花园 4居/2居 建面 97~169m² 淳安-新安南路10号 均价14000元/平
+2017-07-31 20:21:39,119 pipelines.py process_item INFO     日行情数据存储成功：义桥星天地  萧山-义桥镇油虎线和三汇路交叉口 均价20000元/平
+2017-07-31 20:21:39,818 pipelines.py process_item INFO     日行情数据存储成功：瑞金华丽嘉苑  余杭-藕花洲大街和星都大道交汇处 均价12000元/平
+2017-07-31 20:21:40,899 pipelines.py process_item INFO     日行情数据存储成功：富春硅谷  富阳-杭富路九龙大道1号银湖科技新城(野生动物园正对面) 均价9500元/平
+2017-07-31 20:21:41,606 pipelines.py process_item INFO     日行情数据存储成功：保利中央公馆 4居 建面 139m² 江干-艮山西路与新塘路交叉口（4号线新塘路站B出口） 均价53000元/平
+2017-07-31 20:21:42,310 pipelines.py process_item INFO     日行情数据存储成功：创客空间大厦 5居/3居 建面 45~99m² 余杭-余杭区仓前街道龙潭路20号4幢537室 均价28000元/平
+2017-07-31 20:21:43,186 pipelines.py process_item INFO     日行情数据存储成功：万泰城章 2居 建面 83m² 余杭-世纪大道西万泰城章 均价15500元/平
+2017-07-31 20:21:43,889 pipelines.py process_item INFO     日行情数据存储成功：世茂天宸 4居 建面 181~226m² 江干-艮山西路95号 均价60000元/平
+2017-07-31 20:21:44,593 pipelines.py process_item INFO     日行情数据存储成功：上实海上海 3居 建面 113m² 余杭-良渚街道古墩路上实海上海 均价27000元/平
+2017-07-31 20:21:45,306 pipelines.py process_item INFO     日行情数据存储成功：华瑞湘湖美地 4居 建面 150m² 萧山-萧绍路318号(银河商务中心八楼) 价格待定
+2017-07-31 20:21:46,006 pipelines.py process_item INFO     日行情数据存储成功：淮矿东元府 4居 建面 115m² 江干-备塘路与备塘弄交叉路口 价格待定
+2017-07-31 20:21:47,104 pipelines.py process_item INFO     日行情数据存储成功：泰禾杭州院子  余杭-文二西路与常二路交汇处 均价850万/套
+2017-07-31 20:21:47,805 pipelines.py process_item INFO     日行情数据存储成功：保利融信大国璟 3居 建面 97m² 萧山-市心北路99号萧山经济技术开发区管委 均价34500元/平
+2017-07-31 20:21:48,562 pipelines.py process_item INFO     日行情数据存储成功：众安白马山庄 6居 建面 275m² 西湖-留和路浙江科技学院西北侧 均价467万/套
+2017-07-31 20:21:49,269 pipelines.py process_item INFO     日行情数据存储成功：恒大城市之光  滨江-滨文路与时代大道交叉口 价格待定
+2017-07-31 20:21:49,974 pipelines.py process_item INFO     日行情数据存储成功：融创大家侯潮府 4居 建面 213m² 上城-候潮路与钱江路交叉口东北面 均价65727元/平
+2017-07-31 20:21:50,677 pipelines.py process_item INFO     日行情数据存储成功：奥克斯杭州未来中心  余杭-仓前，东至创远路、南至中心一路、西至创景路、北至海曙路 价格待定
+2017-07-31 20:21:51,377 pipelines.py process_item INFO     日行情数据存储成功：景瑞申花郡  拱墅-丰庆路与石祥路交叉口东北方 均价255万/套
+2017-07-31 20:21:52,083 pipelines.py process_item INFO     日行情数据存储成功：云溪新语  西湖-转塘街道文景路和碧波路交叉口 价格待定
+2017-07-31 20:21:52,793 pipelines.py process_item INFO     日行情数据存储成功：广宇万科公园里  拱墅-沈半路447号 价格待定
+2017-07-31 20:21:53,873 pipelines.py process_item INFO     日行情数据存储成功：万宝城  余杭-荷禹路万宝城 均价33500元/平
+2017-07-31 20:21:54,576 pipelines.py process_item INFO     日行情数据存储成功：旭辉滨江东方悦府 4居 建面 128m² 萧山-城厢街道人民路51号五楼511室 均价24000元/平
+2017-07-31 20:21:55,281 pipelines.py process_item INFO     日行情数据存储成功：溪悦宸府 4居 建面 190m² 余杭-五常大道与高教路交汇处 均价18500元/平
+2017-07-31 20:21:55,984 pipelines.py process_item INFO     日行情数据存储成功：协安紫郡 4居 建面 180m² 西湖-董家路（竹桥路）与三墩港河交界处 均价23000元/平
+2017-07-31 20:21:56,685 pipelines.py process_item INFO     日行情数据存储成功：金沙世纪大厦  下沙-金沙世纪大道900号 均价17000元/平
+2017-07-31 20:21:56,685 logstats.py log INFO     Crawled 26 pages (at 26 pages/min), scraped 111 items (at 111 items/min)
+2017-07-31 20:21:57,386 pipelines.py process_item INFO     日行情数据存储成功：香港兴业耦园 5居 建面 190m² 余杭-香港兴业耦园 均价33000元/平
+2017-07-31 20:21:58,089 pipelines.py process_item INFO     日行情数据存储成功：天达广场  江干-江干科技园区九环路6号 均价14500元/平
+2017-07-31 20:21:58,794 pipelines.py process_item INFO     日行情数据存储成功：贝利云栖中心 2居/1居 建面 44~60m² 西湖-之江象山路320国道交叉口（东南） 均价19000元/平
+2017-07-31 20:21:59,501 pipelines.py process_item INFO     日行情数据存储成功：明华名港城（二期） 4居/3居 建面 92~135m² 萧山-经济技术开发区通惠路两侧 均价13500元/平
+2017-07-31 20:22:00,378 pipelines.py process_item INFO     日行情数据存储成功：北辰奥园 5居 建面 137m² 萧山-蜀山路与南三路交叉口 均价21500元/平
+2017-07-31 20:22:01,084 pipelines.py process_item INFO     日行情数据存储成功：万科郡西澜山 4居/3居 建面 125~175m² 余杭-余杭东邻风情大道，北侧为郡西别墅，南侧为自然山体 均价22000元/平
+2017-07-31 20:22:01,794 pipelines.py process_item INFO     日行情数据存储成功：金铂湾 1居 建面 67m² 滨江-杭州滨江区银丰大厦1801 均价183万/套
+2017-07-31 20:22:02,520 pipelines.py process_item INFO     日行情数据存储成功：西溪君庐  余杭-文二西路与荆常大道交叉口向南1000米 价格待定
+2017-07-31 20:22:03,235 pipelines.py process_item INFO     日行情数据存储成功：北湖绿洲花园  余杭-瓶窑镇瓶仓大道东侧、羊城大道北 价格待定
+2017-07-31 20:22:03,939 pipelines.py process_item INFO     日行情数据存储成功：富邦星座  余杭-南大街和南苑街交叉口西南 价格待定
+2017-07-31 20:22:05,021 pipelines.py process_item INFO     日行情数据存储成功：滨江东方海岸  萧山-时代大道与湘湖路交界 价格待定
+2017-07-31 20:22:05,720 pipelines.py process_item INFO     日行情数据存储成功：万科未来城三期梦溪里 3居 建面 89m² 余杭-疏港路万科未来城三期梦溪里 均价22000元/平
+2017-07-31 20:22:06,420 pipelines.py process_item INFO     日行情数据存储成功：三盛颐景御园 3居 建面 230m² 余杭-梧桐圩路与良博路交会处，良渚博物馆西侧 均价630万/套
+2017-07-31 20:22:07,143 pipelines.py process_item INFO     日行情数据存储成功：嘉凯城名城博园  余杭-农副物流园区博园路与棕榈路交汇处 价格待定
+2017-07-31 20:22:07,852 pipelines.py process_item INFO     日行情数据存储成功：滨江江南之星 3居 建面 89m² 萧山-博奥路与建设一路交汇处 均价29000元/平
+2017-07-31 20:22:08,934 pipelines.py process_item INFO     日行情数据存储成功：金隅观澜时代  下沙-24号大街669号 价格待定
+2017-07-31 20:22:09,648 pipelines.py process_item INFO     日行情数据存储成功：新城峯璟  余杭-文二西路与常二路交叉口 价格待定
+2017-07-31 20:22:10,350 pipelines.py process_item INFO     日行情数据存储成功：恒基旭辉府  余杭-崇杭路恒基旭辉府 价格待定
+2017-07-31 20:22:11,051 pipelines.py process_item INFO     日行情数据存储成功：万科杭宸  余杭-杭行路万科杭宸 价格待定
+2017-07-31 20:22:11,753 pipelines.py process_item INFO     日行情数据存储成功：盈都君悦 4居 建面 130m² 海宁市-海宁高新区创智路西侧、栋梁路南 均价13000元/平
+2017-07-31 20:22:12,460 pipelines.py process_item INFO     日行情数据存储成功：越秀维多利中心  江干-秋涛北路76号中豪大酒店主楼6013室 均价30000元/平
+2017-07-31 20:22:13,170 pipelines.py process_item INFO     日行情数据存储成功：滨江华家池 4居 建面 277m² 江干-东至艮秋立交桥、秋涛北路，南至浙江大学 均价38000元/平
+2017-07-31 20:22:13,882 pipelines.py process_item INFO     日行情数据存储成功：万科大都会79号 4居 建面 165~196m² 江干-钱江新城之江隧道运河东路出口 均价50000元/平
+2017-07-31 20:22:14,957 pipelines.py process_item INFO     日行情数据存储成功：崇贤上亿广场  余杭-崇贤街道崇杭街上亿广场 均价20000元/平
+2017-07-31 20:22:15,661 pipelines.py process_item INFO     日行情数据存储成功：阳光城翡丽海岸 2居 建面 140m² 富阳-江滨东大道（富春江边） 均价15000元/平
+2017-07-31 20:22:16,368 pipelines.py process_item INFO     日行情数据存储成功：绿城西溪世纪广场  西湖-余杭塘路花蒋路口 均价20000元/平
+2017-07-31 20:22:17,069 pipelines.py process_item INFO     日行情数据存储成功：佳兆业西溪璞园 3居 建面 125m² 余杭-天目山西路 均价23000元/平
+2017-07-31 20:22:17,772 pipelines.py process_item INFO     日行情数据存储成功：郡乐苑 5居 建面 189m² 萧山-萧绍路1337号 均价11500元/平
+2017-07-31 20:22:18,653 pipelines.py process_item INFO     日行情数据存储成功：中旅紫金名门 4居/2居 建面 89~187m² 西湖-紫荆花路与振华路交叉口 均价35000元/平
+2017-07-31 20:22:19,360 pipelines.py process_item INFO     日行情数据存储成功：绿城运河郡 2居 建面 63m² 拱墅-小河路昼锦街路口 均价20000元/平
+2017-07-31 20:22:20,073 pipelines.py process_item INFO     日行情数据存储成功：富春玫瑰园  富阳-东洲街道江滨东大道515号黄公望森林公园南 价格待定
+2017-07-31 20:22:20,782 pipelines.py process_item INFO     日行情数据存储成功：钱塘梧桐蓝山  余杭-世纪大道与望梅路交叉口 价格待定
+2017-07-31 20:22:21,493 pipelines.py process_item INFO     日行情数据存储成功：万科良渚文化村堂前  余杭-风情大道堂前 价格待定
+2017-07-31 20:22:22,198 pipelines.py process_item INFO     日行情数据存储成功：招商九龙仓学院北麓  拱墅-拱墅区莫干山路与留祥路口交叉口 价格待定
+2017-07-31 20:22:22,901 pipelines.py process_item INFO     日行情数据存储成功：九龙仓君廷  余杭-S304省道与康信路交汇处 价格待定
+2017-07-31 20:22:23,605 pipelines.py process_item INFO     日行情数据存储成功：三花国际 2居/1居 建面 52~54m² 江干-彭埠镇艮山东路128号1幢103室 均价26500元/平
+2017-07-31 20:22:24,305 pipelines.py process_item INFO     日行情数据存储成功：绿城桃花源 4居 建面 670m² 余杭-凤凰山南麓，距杭州市中心18公里 均价5500万/套
+2017-07-31 20:22:25,020 pipelines.py process_item INFO     日行情数据存储成功：宋都阳光国际  江干-通盛路阳光国际 价格待定
+2017-07-31 20:22:25,721 pipelines.py process_item INFO     日行情数据存储成功：滨江西溪之星  余杭-文二路转荆长路南向数百米 均价28000元/平
+2017-07-31 20:22:26,428 pipelines.py process_item INFO     日行情数据存储成功：融创瑷颐湾  余杭-杭行路与祥园北路交汇处（万达广场北面） 价格待定
+2017-07-31 20:22:27,166 pipelines.py process_item INFO     日行情数据存储成功：昆仑华府 3居 建面 89m² 余杭-东至张家坝港，南至新104国道防护林，西至下门坝港，北至康良路 价格待定
+2017-07-31 20:22:27,866 pipelines.py process_item INFO     日行情数据存储成功：赞成赞城  余杭-博园路与棕榈路交叉口 价格待定
+2017-07-31 20:22:28,565 pipelines.py process_item INFO     日行情数据存储成功：光明尚海湾  萧山-育才路农房尚海湾 价格待定
+2017-07-31 20:22:29,266 pipelines.py process_item INFO     日行情数据存储成功：杭州港龙城  江干-明月桥路与鸿泰路交叉路口 均价30000元/平
+2017-07-31 20:22:29,968 pipelines.py process_item INFO     日行情数据存储成功：碧桂园深蓝国际 3居/1居 建面 63~113m² 萧山-萧山区宁围镇市心北路857号110-2室 均价28000元/平
+2017-07-31 20:22:30,670 pipelines.py process_item INFO     日行情数据存储成功：银杏汇 4居 建面 410m² 滨江-闻涛路与东信大道交叉口向西600米杭州钱塘湾艺术馆 均价48000元/平
+2017-07-31 20:22:31,368 pipelines.py process_item INFO     日行情数据存储成功：武林外滩 5居/4居 建面 215~360m² 下城-文晖路交警支队内（原东南面粉厂地块） 均价95000元/平
+2017-07-31 20:22:32,069 pipelines.py process_item INFO     日行情数据存储成功：华润万象汇  萧山-萧山区金城路1038号8楼 均价20000元/平
+2017-07-31 20:22:32,779 pipelines.py process_item INFO     日行情数据存储成功：融创涌清府 4居 建面 147m² 江干-运河东路融创涌清府 均价52000元/平
+2017-07-31 20:22:33,478 pipelines.py process_item INFO     日行情数据存储成功：临平西子国际  余杭-浙江杭州余杭临平南苑街与世纪大道交叉口 均价16000元/平
+2017-07-31 20:22:34,183 pipelines.py process_item INFO     日行情数据存储成功：鑫运时代金座 3居 建面 50m² 江干-九乔路与九睦路交汇处，地铁一号线九堡站东500米 均价30000元/平
+2017-07-31 20:22:34,884 pipelines.py process_item INFO     日行情数据存储成功：新城香悦半岛 4居 建面 128m² 萧山-萧山晨晖路与育才路交叉口 均价34000元/平
+2017-07-31 20:22:35,766 pipelines.py process_item INFO     日行情数据存储成功：朝阳银座 1居 建面 46~57m² 萧山-萧山区山水苑34-14、34-16号 均价15000元/平
+2017-07-31 20:22:36,481 pipelines.py process_item INFO     日行情数据存储成功：阳光城上府 4居/3居 建面 89~130m² 萧山-滨康路与风情大道交口南向100米 均价29000元/平
+2017-07-31 20:22:37,198 pipelines.py process_item INFO     日行情数据存储成功：西溪永乐城  余杭-文一西路与景兴路交叉口 价格待定
+2017-07-31 20:22:37,898 pipelines.py process_item INFO     日行情数据存储成功：赞成檀府 5居 建面 300m² 余杭-星光街与新颜路交叉口（君湖国际酒店东侧） 价格待定
+2017-07-31 20:22:38,600 pipelines.py process_item INFO     日行情数据存储成功：青山湖玫瑰园 4居 建面 615m² 临安-杭州临安科技大道 价格待定
+2017-07-31 20:22:39,305 pipelines.py process_item INFO     日行情数据存储成功：中南白马湖壹号 3居 建面 89m² 萧山-时代大道与天马路交叉口 价格待定
+2017-07-31 20:22:40,004 pipelines.py process_item INFO     日行情数据存储成功：蓝色嘉园  萧山-瓜沥镇东灵北路 价格待定
+2017-07-31 20:22:40,713 pipelines.py process_item INFO     日行情数据存储成功：绿地旭辉城  滨江-七甲路绿地旭辉城 价格待定
+2017-07-31 20:22:41,415 pipelines.py process_item INFO     日行情数据存储成功：西湖公馆 1居 建面 60m² 西湖-转塘珊瑚沙路与江涵路交叉口 均价17000元/平
+2017-07-31 20:22:42,114 pipelines.py process_item INFO     日行情数据存储成功：大奇山郡 3居 建面 310m² 桐庐-金中路8号（城南路向西到底左转即到） 均价500万/套
+2017-07-31 20:22:42,813 pipelines.py process_item INFO     日行情数据存储成功：金地格林格林  江干-天都路天丰路交叉口 价格待定
+2017-07-31 20:22:43,512 pipelines.py process_item INFO     日行情数据存储成功：开元广场 5居/4居/3居/2居 建面 85~242m² 萧山-市心南路地铁2号线南部卧城站西侧 均价1225万/套
+2017-07-31 20:22:44,224 pipelines.py process_item INFO     日行情数据存储成功：杭州新天地 2居 建面 89m² 下城-石祥路71-8号 价格待定
+2017-07-31 20:22:44,930 pipelines.py process_item INFO     日行情数据存储成功：富力新线公园  余杭-文一西路与高教路交叉口 价格待定
+2017-07-31 20:22:45,638 pipelines.py process_item INFO     日行情数据存储成功：中国铁建江南国际城  萧山-金城路与风情大道交汇处往北300米 价格待定
+2017-07-31 20:22:46,346 pipelines.py process_item INFO     日行情数据存储成功：保利梧桐语  江干-红普路与九州路交汇处西侧 价格待定
+2017-07-31 20:22:47,049 pipelines.py process_item INFO     日行情数据存储成功：万都晶座 2居 建面 38~58m² 萧山-萧山区通惠南路756号 均价16000元/平
+2017-07-31 20:22:47,751 pipelines.py process_item INFO     日行情数据存储成功：旺君国际  西湖-良渚街道古墩路和金汇南路交叉口(古墩路1359-1号) 均价15000元/平
+2017-07-31 20:22:48,458 pipelines.py process_item INFO     日行情数据存储成功：潮闻天下 6居 建面 180~280m² 萧山-观十五线潮闻天下 均价370万/套
+2017-07-31 20:22:49,159 pipelines.py process_item INFO     日行情数据存储成功：大美公寓 4居/3居 建面 134~161m² 余杭-余杭时代广场南面，东临南大街、南临玩月街 均价22000元/平
+2017-07-31 20:22:49,872 pipelines.py process_item INFO     日行情数据存储成功：银泰海威国际  滨江-闻涛路银泰海威国际 均价22000元/平
+2017-07-31 20:22:50,572 pipelines.py process_item INFO     日行情数据存储成功：复泰雅宸华庭 4居 建面 149m² 余杭-双后线复泰雅宸华庭 均价11000元/平
+2017-07-31 20:22:51,278 pipelines.py process_item INFO     日行情数据存储成功：佳源银座  拱墅-莫干山路841弄128号2幢123室 均价22000元/平
+2017-07-31 20:22:51,981 pipelines.py process_item INFO     日行情数据存储成功：信融御金台 6居 建面 415~418m² 萧山-民和路信融御金台 均价21000元/平
+2017-07-31 20:22:52,693 pipelines.py process_item INFO     日行情数据存储成功：绿城莲园  余杭-北沙西路荷花路口 价格待定
+2017-07-31 20:22:53,394 pipelines.py process_item INFO     日行情数据存储成功：万科君望  富阳-黄公望国家森林公园南麓 价格待定
+2017-07-31 20:22:54,097 pipelines.py process_item INFO     日行情数据存储成功：大千古街  淳安-环叶线大千古街 价格待定
+2017-07-31 20:22:54,797 pipelines.py process_item INFO     日行情数据存储成功：野风启城 4居 建面 199m² 余杭-康信路野风启城 价格待定
+2017-07-31 20:22:54,798 logstats.py log INFO     Crawled 27 pages (at 1 pages/min), scraped 194 items (at 83 items/min)
+2017-07-31 20:22:55,501 pipelines.py process_item INFO     日行情数据存储成功：龙湖水晶郦城  西湖-庄墩路龙湖水晶郦城 价格待定
+2017-07-31 20:22:56,211 pipelines.py process_item INFO     日行情数据存储成功：恒厚阳光城  余杭-中泰乡杭泰路103号 价格待定
+2017-07-31 20:22:56,912 pipelines.py process_item INFO     日行情数据存储成功：凯德湖墅  拱墅-湖墅北路111号 价格待定
+2017-07-31 20:22:57,612 pipelines.py process_item INFO     日行情数据存储成功：嘉和银领时代  余杭-星桥镇藕花洲大街与星河南路交叉口东南面 价格待定
+2017-07-31 20:22:58,320 pipelines.py process_item INFO     日行情数据存储成功：宋都东郡之星  下沙-银海街东郡之星 价格待定
+2017-07-31 20:22:59,021 pipelines.py process_item INFO     日行情数据存储成功：绿城莲园  余杭-北沙西路荷花路口 均价600万/套
+2017-07-31 20:22:59,726 pipelines.py process_item INFO     日行情数据存储成功：融创河滨之城  西湖-花蒋路、余杭塘路向西到底，西溪银泰城西侧800米处 价格待定
+2017-07-31 20:23:00,431 pipelines.py process_item INFO     日行情数据存储成功：保亿丽景山  余杭-文一西路上仓路南 价格待定
+2017-07-31 20:23:01,131 pipelines.py process_item INFO     日行情数据存储成功：众安理想湾 3居 建面 138~140m² 余杭-临平大道与星河路交叉口 价格待定
+2017-07-31 20:23:01,833 pipelines.py process_item INFO     日行情数据存储成功：金地广场  西湖-金渡北路快乐车吧西北侧80米 价格待定
+2017-07-31 20:23:02,912 pipelines.py process_item INFO     日行情数据存储成功：新城香悦公馆 4居/3居 建面 110~125m² 萧山-萧山北干街道墩里吴社区 均价25000元/平
+2017-07-31 20:23:03,612 pipelines.py process_item INFO     日行情数据存储成功：中赢金城里  萧山-萧山区北干街道荣星村 均价17000元/平
+2017-07-31 20:23:04,319 pipelines.py process_item INFO     日行情数据存储成功：CBC时代大观 1居 建面 37~66m² 余杭-南苑街道玩月街 均价17000元/平
+2017-07-31 20:23:05,017 pipelines.py process_item INFO     日行情数据存储成功：中海御道 4居/3居 建面 185~235m² 江干-钱江新城之江路与御道路交汇处 均价47500元/平
+2017-07-31 20:23:05,717 pipelines.py process_item INFO     日行情数据存储成功：诺德财富中心  萧山-宁围街道市心北路857号130-1室 均价20000元/平
+2017-07-31 20:23:06,417 pipelines.py process_item INFO     日行情数据存储成功：复泰雅宸华庭 6居 建面 326m² 余杭-双后线复泰雅宸华庭 价格待定
+2017-07-31 20:23:07,129 pipelines.py process_item INFO     日行情数据存储成功：绿谷杭州东部创新中心  江干-江干区九盛路九号 均价16000元/平
+2017-07-31 20:23:07,829 pipelines.py process_item INFO     日行情数据存储成功：宋都时间国际 1居 建面 38~41m² 江干-富春路789号 均价26000元/平
+2017-07-31 20:23:08,713 pipelines.py process_item INFO     日行情数据存储成功：翡翠城  余杭-西溪湿地以西约2公里（高教路、五常大道交汇处） 价格待定
+2017-07-31 20:23:09,414 pipelines.py process_item INFO     日行情数据存储成功：华鼎君临天峯  余杭-三曹街和南大街交叉口 价格待定
+2017-07-31 20:23:10,118 pipelines.py process_item INFO     日行情数据存储成功：金地天逸 4居 建面 230m² 萧山-金城路与风情大道交叉口，1号线滨康站正对面 价格待定
+2017-07-31 20:23:10,821 pipelines.py process_item INFO     日行情数据存储成功：华元欢乐城  余杭-临平新城迎宾路望梅路口西北角 价格待定
+2017-07-31 20:23:11,527 pipelines.py process_item INFO     日行情数据存储成功：天鸿香榭里  拱墅-东至通益路，南至祥运路，西至总管路，北临十字港河 价格待定
+2017-07-31 20:23:12,608 pipelines.py process_item INFO     日行情数据存储成功：宝嘉誉府  西湖-紫荆花路和石祥路交叉口往西100米（石祥西路788号） 价格待定
+2017-07-31 20:23:13,320 pipelines.py process_item INFO     日行情数据存储成功：竹径云山 3居 建面 122m² 余杭-古墩路与东西大道交叉口西行3公里 均价280万/套
+2017-07-31 20:23:14,019 pipelines.py process_item INFO     日行情数据存储成功：财和湘域湾  萧山-潘水路与蜀山路交界口 均价1000万/套
+2017-07-31 20:23:14,724 pipelines.py process_item INFO     日行情数据存储成功：郡原相江公寓  江干-下沙大道与海景路交叉口（九堡大桥西侧） 均价30000元/平
+2017-07-31 20:23:15,423 pipelines.py process_item INFO     日行情数据存储成功：中梁百悦城  余杭-顺风路128号（临平五中旁） 价格待定
+2017-07-31 20:23:16,510 pipelines.py process_item INFO     日行情数据存储成功：合景天峻  余杭-创景路与余杭塘南路的交叉口（梦想小镇旁） 价格待定
+2017-07-31 20:23:17,220 pipelines.py process_item INFO     日行情数据存储成功：首开望宸  拱墅-广济路首开望宸 价格待定
+2017-07-31 20:23:17,920 pipelines.py process_item INFO     日行情数据存储成功：中国铁建保利像素  下沙-银海街与千帆路交叉口 价格待定
+2017-07-31 20:23:18,629 pipelines.py process_item INFO     日行情数据存储成功：赞成中心  上城-之江路与飞云江路交叉口西北部 均价45000元/平
+2017-07-31 20:23:19,330 pipelines.py process_item INFO     日行情数据存储成功：望湖山庄 4居 建面 137m² 淳安-千岛湖镇排岭南路48号 均价12000元/平
+2017-07-31 20:23:20,032 pipelines.py process_item INFO     日行情数据存储成功：交投绿城明珠国际  江干-杭州市望江路69号 均价30000元/平
+2017-07-31 20:23:20,732 pipelines.py process_item INFO     日行情数据存储成功：梦溪东明山居 2居 建面 89~90m² 余杭-良渚街道梦溪东明山居 均价14500元/平
+2017-07-31 20:23:21,441 pipelines.py process_item INFO     日行情数据存储成功：融创富春壹号院  富阳-武康志远南路368号（104国道旁） 价格待定
+2017-07-31 20:23:22,143 pipelines.py process_item INFO     日行情数据存储成功：尚城墅  滨江-浙江杭州市滨江区新生路六和路口 价格待定
+2017-07-31 20:23:22,844 pipelines.py process_item INFO     日行情数据存储成功：通和十二橡树  余杭-星都大道与星灿路交叉口东南面 价格待定
+2017-07-31 20:23:23,543 pipelines.py process_item INFO     日行情数据存储成功：万科溪望  余杭-文二西路与高教路口往西约400米 价格待定
+2017-07-31 20:23:24,254 pipelines.py process_item INFO     日行情数据存储成功：东方一号 4居 建面 185m² 萧山-建设一路与宁东路交叉口 价格待定
+2017-07-31 20:23:24,953 pipelines.py process_item INFO     日行情数据存储成功：合景映月台  余杭-溪望路合景映月台 价格待定
+2017-07-31 20:23:25,652 pipelines.py process_item INFO     日行情数据存储成功：万科锦云坊  余杭-古墩路万科锦云坊 价格待定
+2017-07-31 20:23:26,353 pipelines.py process_item INFO     日行情数据存储成功：梦溪东明山居 5居 建面 502m² 余杭-良渚街道梦溪东明山居 均价1000万/套
+2017-07-31 20:23:27,071 pipelines.py process_item INFO     日行情数据存储成功：滨江金茂府  滨江-丰潭路380号城西银泰城D座7楼 价格待定
+2017-07-31 20:23:27,773 pipelines.py process_item INFO     日行情数据存储成功：欧美金融城  余杭-文一西路和水城北路交汇处 均价19500元/平
+2017-07-31 20:23:28,479 pipelines.py process_item INFO     日行情数据存储成功：越秀星汇尚城  余杭-东吴路越秀星汇尚城 价格待定
+2017-07-31 20:23:29,185 pipelines.py process_item INFO     日行情数据存储成功：万科郡西  余杭-余杭区良渚镇(人民政府内) 价格待定
+2017-07-31 20:23:29,902 pipelines.py process_item INFO     日行情数据存储成功：合景叠彩园  余杭-未来科技城溪望路阿里巴巴淘宝城南面 价格待定
+2017-07-31 20:23:30,602 pipelines.py process_item INFO     日行情数据存储成功：绿都御景蓝湾  萧山-萧山区义桥镇民丰村 价格待定
+2017-07-31 20:23:31,317 pipelines.py process_item INFO     日行情数据存储成功：阳光城翡丽湾  江干-华中路与大农港路口 价格待定
+2017-07-31 20:23:32,018 pipelines.py process_item INFO     日行情数据存储成功：嘉里云荷廷  西湖-之江国家旅游度假区近梅灵南路与之江路交汇处东南 价格待定
+2017-07-31 20:23:32,722 pipelines.py process_item INFO     日行情数据存储成功：万科未来城三期梦溪里  余杭-疏港路万科未来城三期梦溪里 价格待定
+2017-07-31 20:23:33,423 pipelines.py process_item INFO     日行情数据存储成功：中天珺府 5居 建面 378m² 临安-青山湖街道科技大道2988号 价格待定
+2017-07-31 20:23:34,126 pipelines.py process_item INFO     日行情数据存储成功：耀达金鼎华庭  余杭-勾庄农副产品物流中心北 价格待定
+2017-07-31 20:23:34,845 pipelines.py process_item INFO     日行情数据存储成功：华元花涧堂  余杭-临平望梅路和汀城路交叉口 价格待定
+2017-07-31 20:23:35,543 pipelines.py process_item INFO     日行情数据存储成功：兴耀星悦湾  萧山-向阳路兴耀星悦湾 价格待定
+2017-07-31 20:23:36,248 pipelines.py process_item INFO     日行情数据存储成功：融信学院府  拱墅-育英路与学院北路 价格待定
+2017-07-31 20:23:36,949 pipelines.py process_item INFO     日行情数据存储成功：泰地北上新城  下城-华中路（南侧杭玻路，北侧永华街，西侧500米石桥路） 价格待定
+2017-07-31 20:23:37,653 pipelines.py process_item INFO     日行情数据存储成功：赞成乐山红叶  余杭-闲林镇闲富中路2号 价格待定
+2017-07-31 20:23:38,360 pipelines.py process_item INFO     日行情数据存储成功：赞成首府  余杭-世纪大道与望梅路交叉口西南侧 价格待定
+2017-07-31 20:23:39,070 pipelines.py process_item INFO     日行情数据存储成功：坤和和家园 6居/5居/4居 建面 183~367m² 西湖-西溪路南侧西穆坞 价格待定
+2017-07-31 20:23:39,957 pipelines.py process_item INFO     日行情数据存储成功：阳光城普升  江干-德胜东路红普路交叉口北侧 价格待定
+2017-07-31 20:23:40,659 pipelines.py process_item INFO     日行情数据存储成功：绿城曼陀花园  临安-浙江杭州临安市锦城街道泥山湾村 价格待定
+2017-07-31 20:23:41,359 pipelines.py process_item INFO     日行情数据存储成功：观澜时代云邸苑  下沙-观澜时代云邸苑 价格待定
+2017-07-31 20:23:42,063 pipelines.py process_item INFO     日行情数据存储成功：赞成龙兴道一号  余杭-南苑街道新颜南路与龙兴街交叉口 价格待定
+2017-07-31 20:23:42,761 pipelines.py process_item INFO     日行情数据存储成功：中骏钱塘御景  萧山-江干区钱江路1366号华润大厦a座7层 价格待定
+2017-07-31 20:23:43,463 pipelines.py process_item INFO     日行情数据存储成功：东厦东港花苑  余杭-北沙西路东港花苑 价格待定
+2017-07-31 20:23:44,173 pipelines.py process_item INFO     日行情数据存储成功：潮闻天下  萧山-观十五线潮闻天下 价格待定
+2017-07-31 20:23:44,882 pipelines.py process_item INFO     日行情数据存储成功：中赢金城里  萧山-萧山区北干街道荣星村 价格待定
+2017-07-31 20:23:45,593 pipelines.py process_item INFO     日行情数据存储成功：坤和和家园 6居/5居 建面 305~367m² 西湖-西溪路南侧西穆坞 均价1180万/套
+2017-07-31 20:23:46,298 pipelines.py process_item INFO     日行情数据存储成功：龙湖武林九里  江干-华丰路龙湖武林九里 价格待定
+2017-07-31 20:23:46,299 logstats.py log INFO     Crawled 34 pages (at 7 pages/min), scraped 267 items (at 73 items/min)
+2017-07-31 20:23:47,002 pipelines.py process_item INFO     日行情数据存储成功：中国铁建国际花园  江干-城东新城北区地铁1号线九和路站北700米，冯普路和支十二路 价格待定
+2017-07-31 20:23:48,088 pipelines.py process_item INFO     日行情数据存储成功：湘湖壹号  萧山-萧山区北干街道绿都世贸广场写字楼25A 价格待定
+2017-07-31 20:23:48,787 pipelines.py process_item INFO     日行情数据存储成功：宝嘉誉峰  拱墅-拱墅石祥路与东吴路交界处（万达广场往东50米） 价格待定
+2017-07-31 20:23:49,493 pipelines.py process_item INFO     日行情数据存储成功：西溪智慧健康谷  余杭-仓前街道文一西路1218号恒生科技园 价格待定
+2017-07-31 20:23:50,209 pipelines.py process_item INFO     日行情数据存储成功：之江九里  西湖-之江国家旅游度假区之江路与碧波路交叉口 价格待定
+2017-07-31 20:23:50,913 pipelines.py process_item INFO     日行情数据存储成功：海德公园  余杭-东吴路海德公园 价格待定
+2017-07-31 20:23:51,620 pipelines.py process_item INFO     日行情数据存储成功：四维金座  余杭-杭州余杭科技园 价格待定
+2017-07-31 20:23:52,332 pipelines.py process_item INFO     日行情数据存储成功：欧美金融城  余杭-文一西路和水城北路交汇处 价格待定
+2017-07-31 20:23:53,031 pipelines.py process_item INFO     日行情数据存储成功：天阳文晖  江干-机场路转全福桥路200米 价格待定
+2017-07-31 20:23:53,916 pipelines.py process_item INFO     日行情数据存储成功：梅和名府  萧山-萧然东路（龙发花园北侧） 价格待定
+2017-07-31 20:23:54,616 pipelines.py process_item INFO     日行情数据存储成功：钱江御府  上城-秋涛路与候潮路交叉口东北角 价格待定
+2017-07-31 20:23:55,320 pipelines.py process_item INFO     日行情数据存储成功：宋都丽郡国际  萧山-义府大街699号 价格待定
+2017-07-31 20:23:56,213 pipelines.py process_item INFO     日行情数据存储成功：和昌府  余杭-良渚街道疏港路和昌府 价格待定
+2017-07-31 20:23:56,927 pipelines.py process_item INFO     日行情数据存储成功：合诚之江商务中心  西湖-之江转塘象山路与鸡山路交叉口西南角 价格待定
+2017-07-31 20:23:57,646 pipelines.py process_item INFO     日行情数据存储成功：中兴御田清庭  拱墅-半山田园板块青城路与依山路交界处 价格待定
+2017-07-31 20:23:58,349 pipelines.py process_item INFO     日行情数据存储成功：金地西溪风华  余杭-常二路金地西溪风华 价格待定
+2017-07-31 20:23:59,051 pipelines.py process_item INFO     日行情数据存储成功：佳源名城  余杭-崇贤镇，南临洋湾路，东至崇超路，西临运河支流 价格待定
+2017-07-31 20:23:59,754 pipelines.py process_item INFO     日行情数据存储成功：富力西溪悦居  余杭-文一西路与常二路口(淘宝城对面) 价格待定
+2017-07-31 20:24:00,461 pipelines.py process_item INFO     日行情数据存储成功：江湾城  萧山-义桥镇东方路138号 价格待定
+2017-07-31 20:24:01,167 pipelines.py process_item INFO     日行情数据存储成功：广宇鼎悦府  余杭-南大街与南苑街(翁梅路)交叉口东侧 价格待定
+2017-07-31 20:24:01,867 pipelines.py process_item INFO     日行情数据存储成功：金色和庄  萧山-西湖区国际花园B-21 价格待定
+2017-07-31 20:24:02,579 pipelines.py process_item INFO     日行情数据存储成功：通策状元府 5居 建面 297m² 临安-临安市锦城街道新民街216号 价格待定
+2017-07-31 20:24:03,281 pipelines.py process_item INFO     日行情数据存储成功：东日晴好 3居 建面 130m² 西湖-科海路与狐山路交叉口（杭州市委党校北侧） 价格待定
+2017-07-31 20:24:03,982 pipelines.py process_item INFO     日行情数据存储成功：湖景居  下沙-下沙天城东路820号 价格待定
+2017-07-31 20:24:04,691 pipelines.py process_item INFO     日行情数据存储成功：中栋国际  萧山-风情大道与建设一路交叉口 价格待定
+2017-07-31 20:24:05,399 pipelines.py process_item INFO     日行情数据存储成功：金街美地  西湖-之江320国道与杭富路交叉口 价格待定
+2017-07-31 20:24:06,100 pipelines.py process_item INFO     日行情数据存储成功：宋都时间国际 1居 建面 40m² 江干-富春路789号 价格待定
+2017-07-31 20:24:06,814 pipelines.py process_item INFO     日行情数据存储成功：朗诗熙华府 4居/3居 建面 113~136m² 下城-胜景路与王马东路交汇处 价格待定
+2017-07-31 20:24:07,539 pipelines.py process_item INFO     日行情数据存储成功：地铁东城广场 1居 建面 50~60m² 江干-九沙大道399号地铁东城广场 价格待定
+2017-07-31 20:24:08,244 pipelines.py process_item INFO     日行情数据存储成功：黄金时代  江干-三里亭小区顾家畈路春晖社区斜对面 价格待定
+2017-07-31 20:24:08,947 pipelines.py process_item INFO     日行情数据存储成功：绿城九龙仓柳岸晓风  滨江-闻涛路绿城九龙仓柳岸晓风 价格待定
+2017-07-31 20:24:09,649 pipelines.py process_item INFO     日行情数据存储成功：沈半路灯具市场  拱墅-沈半路鹏龙商务大厦 价格待定
+2017-07-31 20:24:10,726 pipelines.py process_item INFO     日行情数据存储成功：佳源未来府  余杭-安乐路佳源未来府 价格待定
+2017-07-31 20:24:11,428 pipelines.py process_item INFO     日行情数据存储成功：祥生钱塘新语 3居 建面 82m² 下沙-海宁市农发区启潮路72号 价格待定
+2017-07-31 20:24:12,129 pipelines.py process_item INFO     日行情数据存储成功：东晖龙悦湾  余杭-余杭临平街道五洲路与小白线交叉路口 （超山风景区旁） 价格待定
+2017-07-31 20:24:12,833 pipelines.py process_item INFO     日行情数据存储成功：科尔世纪外滩  萧山-北干街道市心中路618号 价格待定
+2017-07-31 20:24:13,548 pipelines.py process_item INFO     日行情数据存储成功：武林外滩  下城-文晖路交警支队内（原东南面粉厂地块） 价格待定
+2017-07-31 20:24:14,252 pipelines.py process_item INFO     日行情数据存储成功：滨江旭辉万家之星  余杭-锦江路滨江旭辉万家之星 价格待定
+2017-07-31 20:24:14,961 pipelines.py process_item INFO     日行情数据存储成功：九龙湾  淳安-千岛湖镇阳光路107号 价格待定
+2017-07-31 20:24:15,665 pipelines.py process_item INFO     日行情数据存储成功：东海水景城  余杭-临平世纪大道与西安路交叉口东海水景城 价格待定
+2017-07-31 20:24:16,366 pipelines.py process_item INFO     日行情数据存储成功：赞成檀府  余杭-星光街与新颜路交叉口（君湖国际酒店东侧） 价格待定
+2017-07-31 20:24:17,069 pipelines.py process_item INFO     日行情数据存储成功：英冠乐创城  萧山-北干街道永久路５１８号 价格待定
+2017-07-31 20:24:17,773 pipelines.py process_item INFO     日行情数据存储成功：宋都东郡国际 5居 建面 230m² 下沙-德胜快速路、沿江大道交汇处，浙江财经学院正北面 价格待定
+2017-07-31 20:24:18,495 pipelines.py process_item INFO     日行情数据存储成功：太平洋银座  江干-东宁路东港嘉苑对面 价格待定
+2017-07-31 20:24:19,571 pipelines.py process_item INFO     日行情数据存储成功：新城香悦半岛  萧山-萧山晨晖路与育才路交叉口 价格待定
+2017-07-31 20:24:20,284 pipelines.py process_item INFO     日行情数据存储成功：广厦天都城天熙公馆  余杭-余杭区星桥街道欢西路1号6幢 价格待定
+2017-07-31 20:24:21,363 pipelines.py process_item INFO     日行情数据存储成功：中豪国际  江干-新塘路中豪国际 价格待定
+2017-07-31 20:24:22,063 pipelines.py process_item INFO     日行情数据存储成功：龙湖春江天玺  萧山-经济技术开发区三号路538号综合楼8268室；萧山区三益线 价格待定
+2017-07-31 20:24:22,765 pipelines.py process_item INFO     日行情数据存储成功：山水国际  富阳-鹿山街道江城路398号 价格待定
+2017-07-31 20:24:23,466 pipelines.py process_item INFO     日行情数据存储成功：杭州明石商业大厦 1居 建面 58m² 江干-德胜东路和明石路交叉口 价格待定
+2017-07-31 20:24:24,167 pipelines.py process_item INFO     日行情数据存储成功：星运丽园兰逸  余杭-星桥南路131-13号 价格待定
+2017-07-31 20:24:25,043 pipelines.py process_item INFO     日行情数据存储成功：元成时代中心  下沙-下沙下沙元成路与金乔街交汇处 价格待定
+2017-07-31 20:24:25,744 pipelines.py process_item INFO     日行情数据存储成功：公望澜山  富阳-富春街道市心北路100号402室 价格待定
+2017-07-31 20:24:26,447 pipelines.py process_item INFO     日行情数据存储成功：原禾大厦  余杭-良渚街道原禾大厦 价格待定
+2017-07-31 20:24:26,626 engine.py close_spider INFO     Closing spider (finished)
+2017-07-31 20:24:26,626 statscollectors.py close_spider INFO     Dumping Scrapy stats:
+{'downloader/request_bytes': 11407,
+ 'downloader/request_count': 34,
+ 'downloader/request_method_count/GET': 34,
+ 'downloader/response_bytes': 570570,
+ 'downloader/response_count': 34,
+ 'downloader/response_status_count/200': 34,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 31, 12, 24, 26, 626630),
+ 'item_scraped_count': 325,
+ 'log_count/DEBUG': 360,
+ 'log_count/INFO': 321,
+ 'response_received_count': 34,
+ 'scheduler/dequeued': 34,
+ 'scheduler/dequeued/memory': 34,
+ 'scheduler/enqueued': 34,
+ 'scheduler/enqueued/memory': 34,
+ 'start_time': datetime.datetime(2017, 7, 31, 12, 20, 39, 580892)}
+2017-07-31 20:24:26,627 engine.py <lambda> INFO     Spider closed (finished)
