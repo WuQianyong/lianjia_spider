@@ -64,7 +64,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'lianjia_spider.pipelines.LianjiaSpiderPipeline': 300,
+    'lianjia_spider.pipelines.LianjiaSpiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -94,17 +94,18 @@ ITEM_PIPELINES = {
 CONNECT_MYSQL = {
     "host": "192.168.4.238:3306",
     "user": "yong",
-    "pwd": "19950105",
+    "pwd": "190105",
     "db": "hsh_fx",
     "charset": "utf8"
 }
 
 
-TABLE_LIST = ['lianjia_loupan']
+TABLE_LIST = ['lianjia_loupan', 'lianjia_open_info', 'lianjia_xiangxi_info']
 
 # 日志设置
 # LOG_ENABLED = False
 '''
+--- 楼盘信息表
 drop TABLE  if EXISTS  `lianjia_loupan`;
 
 CREATE TABLE `lianjia_loupan` (
@@ -117,8 +118,54 @@ CREATE TABLE `lianjia_loupan` (
   `url` varchar(300) DEFAULT NULL,
   `where` varchar(300) DEFAULT NULL,
   `updated` datetime DEFAULT NULL,
-	
-  
+  `luopan_id` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--- 开盘信息
+drop TABLE  if EXISTS  `lianjia_open_info`;
+
+CREATE TABLE `lianjia_open_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `luopan_id` varchar(100) DEFAULT NULL,
+  `open_date` varchar(40) DEFAULT NULL,
+  `build` varchar(200) DEFAULT NULL,
+  `fqbuild` varchar(200) DEFAULT NULL,
+  `fqname` varchar(40) DEFAULT NULL,
+  `handover_date` varchar(40) DEFAULT NULL,
+  `updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--- 详细信息
+drop TABLE  if EXISTS  `lianjia_xiangxi_info`;
+
+CREATE TABLE `lianjia_xiangxi_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `luopan_id` varchar(100) DEFAULT NULL,
+  `area_ratio` varchar(30) DEFAULT NULL,
+  `plan_household` varchar(30) DEFAULT NULL,
+  `green_rate` varchar(30) DEFAULT NULL,
+  `heating_method` varchar(40) DEFAULT NULL,
+  `developer` varchar(100) DEFAULT NULL,
+  `parking_spaces` varchar(100) DEFAULT NULL,
+  `real_estate` varchar(100) DEFAULT NULL,
+  `property_rights` varchar(40) DEFAULT NULL,
+  `water_supply` varchar(40) DEFAULT NULL,
+  `proposed_price` varchar(40) DEFAULT NULL,
+  `build_area` varchar(40) DEFAULT NULL,
+  `property_company` varchar(100) DEFAULT NULL,
+  `project_charact` varchar(300) DEFAULT NULL,
+  `power_supply` varchar(40) DEFAULT NULL,
+  `location` varchar(200) DEFAULT NULL,
+  `build_type` varchar(40) DEFAULT NULL,
+  `regional` varchar(200) DEFAULT NULL,
+  `cover_area` varchar(100) DEFAULT NULL,
+  `parking_ratio` varchar(100) DEFAULT NULL,
+  `property_type` varchar(100) DEFAULT NULL,
+  `sales_address` varchar(100) DEFAULT NULL,
+  `property_cost` varchar(100) DEFAULT NULL,
+  `updated` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 '''

@@ -18,5 +18,43 @@ class LianjiaSpiderItem(Item):
     other = Field()
     type = Field()
     price = Field()
+    luopan_id = Field()
 
     # pass
+
+
+class Lianjia_openinfo(Item):
+    luopan_id = Field()
+    open_date = Field()
+    build = Field()
+    handover_date = Field()
+    fqname = Field()
+    fqbuild = Field()
+
+
+class Lianjia_infoItem(Item):
+    luopan_id=Field()
+    area_ratio = Field()
+    plan_household = Field()
+    green_rate = Field()
+    heating_method = Field()
+    developer = Field()
+    real_estate = Field()
+    parking_spaces = Field()
+    property_rights = Field()
+    water_supply = Field()
+    proposed_price = Field()
+    build_area = Field()
+    property_company = Field()
+    cover_area = Field()
+    project_charact = Field()
+    power_supply = Field()
+    location = Field()
+    build_type = Field()
+    regional = Field()
+    parking_ratio = Field()
+    sales_address = Field()
+    property_cost = Field()
+    property_type = Field()
+
+

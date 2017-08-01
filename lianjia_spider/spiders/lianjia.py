@@ -18,7 +18,7 @@ class Lianjia(Spider):
 
     start_urls = [
         # 'http://hz.fang.lianjia.com/loupan/pg1nht1/',
-        'http://hz.fang.lianjia.com/loupan/pg{}/'.format(i) for i in range(1,35)
+        'http://hz.fang.lianjia.com/loupan/pg{}/'.format(i) for i in range(1, 35)
     ]
 
     host = 'http://hz.fang.lianjia.com'
@@ -31,7 +31,10 @@ class Lianjia(Spider):
 
             data_info_area = data_item.xpath('div[@class="col-1"]')
             item['name'] = data_info_area[0].xpath('h2/a/text()').extract()[0]
-            item['url'] = self.host + data_info_area[0].xpath('h2/a/@href').extract()[0]
+            url_tail = data_info_area[0].xpath('h2/a/@href').extract()[0]
+            item['url'] = self.host + url_tail
+            item['luopan_id'] = url_tail[8:len(url_tail) - 1]
+
             item['where'] = data_info_area[0].xpath('div[@class="where"]/span/text()').extract()[0]
             area_list = data_info_area[0].xpath('div[@class="area"]').xpath('string(.)').extract()[0].split('-')
             item['area'] = ' '.join([a.strip() for a in area_list])

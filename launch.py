@@ -28,24 +28,25 @@ def run():
     # ================   修改这块 ======================================
     # process.crawl 是添加爬虫
 
-    process.crawl(Lianjia)  # 大连日行情
+    # process.crawl(Lianjia)  # 链家楼盘列表
+    process.crawl(Lianjia_info_Spider)  # 链家楼盘开盘信息
 
     # =================================================================
     # 启动 上面的 所有爬虫
     process.start()
 if __name__ == '__main__':
-    configure_logging(install_root_handler=False)
-    logging.basicConfig(
-
-        format='%(asctime)s %(filename)s %(funcName)s %(levelname)-8s %(message)s',
-        level=logging.INFO
-    )
-    log_dir = os.path.join(os.path.abspath('.'), 'logfiles')
-    log_name = 'futures_{}.log'.format(time.strftime("%Y%m%d%H%M%S", time.localtime()))
-
-    logging = simple_log(log_dir, log_name)
-    logging.info(log_dir)
-    print(sys.argv)
+    # configure_logging(install_root_handler=False)
+    # logging.basicConfig(
+    #
+    #     format='%(asctime)s %(filename)s %(funcName)s %(levelname)-8s %(message)s',
+    #     level=logging.INFO
+    # )
+    # log_dir = os.path.join(os.path.abspath('.'), 'logfiles')
+    # log_name = 'futures_{}.log'.format(time.strftime("%Y%m%d%H%M%S", time.localtime()))
+    #
+    # logging = simple_log(log_dir, log_name)
+    # logging.info(log_dir)
+    # print(sys.argv)
     run()
     # sched = BlockingScheduler()
     # sched.add_job(run, 'interval', hours=8, max_instances=3)
