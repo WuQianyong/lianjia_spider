@@ -19,7 +19,7 @@ def get_urls():
     result = session.query(luopan.url)
     # print(list(result))
     print(len(list(result)))
-    result_list = list(set([a[0] for a in list(result)]))
+    result_list = sorted(list(set([a[0] for a in list(result)])))
     print(len(result_list))
     return result_list
 
@@ -52,3 +52,4 @@ INFO_DICT = {
 
 if __name__ == '__main__':
     print(get_urls())
+    print(get_urls().index('http://hz.fang.lianjia.com/loupan/p_hzmssydsaasxl/'))

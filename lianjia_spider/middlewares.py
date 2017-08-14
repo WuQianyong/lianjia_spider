@@ -49,6 +49,7 @@ class LianjiaSpiderSpiderMiddleware(object):
         # that it doesn’t have a response associated.
 
         # Must return only requests (not items).
+
         for r in start_requests:
             yield r
 

@@ -26,13 +26,13 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 10
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
@@ -41,6 +41,10 @@ ROBOTSTXT_OBEY = False
 DEFAULT_REQUEST_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'zh-CN,zh;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'Referer': 'http://hz.fang.lianjia.com/loupan/',
+    'Connection': 'keep-alive',
+    'Cookie': 'lianjia_uuid=b68981de-415f-4785-aba0-0afb5155ecd0; UM_distinctid=15d97a515da301-0425f52a3c6fc8-8383667-1fa400-15d97a515dbbc0; select_city=330100; Hm_lvt_9152f8221cb6243a53c83b956842be8a=1501487765,1502332753; Hm_lpvt_9152f8221cb6243a53c83b956842be8a=1502332753; _smt_uid=597ee294.1a06f9fb; logger_session=e95a64ba08e801fe58526aac69a27b2d; CNZZDATA1256189456=109723742-1501486905-%7C1502356454; _ga=GA1.2.1992599976.1501487767; _gid=GA1.2.706900928.1502332755; CNZZDATA1254525948=1012050688-1501485973-%7C1502356783; CNZZDATA1255633284=837828444-1501484996-%7C1502355751; CNZZDATA1255604082=1437963776-1501486466-%7C1502357346; lianjia_ssid=067d78e3-330d-4d4f-b885-68fccb746b39'
 }
 
 # Enable or disable spider middlewares
@@ -94,13 +98,13 @@ ITEM_PIPELINES = {
 CONNECT_MYSQL = {
     "host": "192.168.4.238:3306",
     "user": "yong",
-    "pwd": "190105",
+    "pwd": "19950105",
     "db": "hsh_fx",
     "charset": "utf8"
 }
 
 
-TABLE_LIST = ['lianjia_loupan', 'lianjia_open_info', 'lianjia_xiangxi_info']
+TABLE_LIST = ['lianjia_loupan', 'lianjia_open_info', 'lianjia_xiangxi_info','lianjia_comment']
 
 # 日志设置
 # LOG_ENABLED = False
@@ -168,4 +172,21 @@ CREATE TABLE `lianjia_xiangxi_info` (
   `updated` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+----------- 评论信息
+CREATE TABLE `lianjia_comment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `luopan_id` varchar(100) DEFAULT NULL,
+  `info` varchar(60) DEFAULT NULL,
+  `words` varchar(500) DEFAULT NULL,
+  `num` varchar(30) DEFAULT NULL,
+  `star` varchar(40) DEFAULT NULL,
+  `like` varchar(10) DEFAULT NULL,
+  `time` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
 '''

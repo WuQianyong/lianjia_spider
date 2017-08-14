@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-from lianjia_spider.items import LianjiaSpiderItem, Lianjia_openinfo, Lianjia_infoItem
+from lianjia_spider.items import LianjiaSpiderItem, Lianjia_openinfo, Lianjia_infoItem, Lianjia_commentItem
 from lianjia_spider.settings import CONNECT_MYSQL, TABLE_LIST
 from plugins.connect_db import _conn
 from sqlalchemy import *
@@ -48,7 +48,7 @@ class LianjiaSpiderPipeline(object):
                     except Exception as e:
                         logging.error('链家楼盘 存储数据 失败 原因：{}             数据：{}'.format(e, item))
                         self.session.rollback()
-            if isinstance(item, Lianjia_openinfo):
+            elif isinstance(item, Lianjia_openinfo):
                 day_quotes = self.base.classes[TABLE_LIST[1]]
                 result = self.session.query(day_quotes.id).filter(day_quotes.luopan_id == item.get('luopan_id'),
                                                                   day_quotes.fqname == item.get('fqname'),
@@ -73,7 +73,7 @@ class LianjiaSpiderPipeline(object):
                     except Exception as e:
                         logging.error('链家开盘 存储数据 失败 原因：{}             数据：{}'.format(e, item))
                         self.session.rollback()
-            if isinstance(item, Lianjia_infoItem):
+            elif isinstance(item, Lianjia_infoItem):
                 day_quotes = self.base.classes[TABLE_LIST[2]]
                 result = self.session.query(day_quotes.id).filter(day_quotes.luopan_id == item.get('luopan_id'))
                 result_list = list(result)
@@ -131,12 +131,50 @@ class LianjiaSpiderPipeline(object):
                                            updated=func.now())
 
                 try:
-                    self.session.add(onerecord)
+                    self.session.merge(onerecord)
                     self.session.commit()
                     logging.info('链家详细 数据存储成功：{} {} {} {}'.format(item.get('luopan_id'),
                                                                   item.get('plan_household'),
                                                                   item.get('build_area'),
                                                                   item.get('project_charact')))
+                except Exception as e:
+                    logging.error('链家详细 存储数据 失败 原因：{}             数据：{}'.format(e, item))
+                    self.session.rollback()
+            elif isinstance(item, Lianjia_commentItem):
+                day_quotes = self.base.classes[TABLE_LIST[3]]
+                result = self.session.query(day_quotes.id).filter(day_quotes.luopan_id == item.get('luopan_id'),
+                                                                  day_quotes.info == item.get('info'),
+                                                                  day_quotes.words == item.get('words'),
+                                                                  day_quotes.time == item.get('time'))
+                result_list = list(result)
+                print('======= {}'.format(result_list))
+                if result_list.__len__() == 0:
+                    onerecord = day_quotes(luopan_id=item.get('luopan_id'),
+                                           info=item.get('info'),
+                                           like=item.get('like'),
+                                           num=item.get('num'),
+                                           star=item.get('star'),
+                                           time=item.get('time'),
+                                           words=item.get('words'),
+                                           updated=func.now())
+                else:
+                    onerecord = day_quotes(id=result_list[0][0],
+                                           luopan_id=item.get('luopan_id'),
+                                           info=item.get('info'),
+                                           like=item.get('like'),
+                                           num=item.get('num'),
+                                           star=item.get('star'),
+                                           time=item.get('time'),
+                                           words=item.get('words'),
+                                           updated=func.now())
+
+                try:
+                    self.session.merge(onerecord)
+                    self.session.commit()
+                    logging.info('链家详细 数据存储成功：{} {} {} {}'.format(item.get('luopan_id'),
+                                                                  item.get('info'),
+                                                                  item.get('words'),
+                                                                  item.get('time')))
                 except Exception as e:
                     logging.error('链家详细 存储数据 失败 原因：{}             数据：{}'.format(e, item))
                     self.session.rollback()

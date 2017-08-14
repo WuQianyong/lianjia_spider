@@ -28,8 +28,9 @@ def run():
     # ================   修改这块 ======================================
     # process.crawl 是添加爬虫
 
-    # process.crawl(Lianjia)  # 链家楼盘列表
-    process.crawl(Lianjia_info_Spider)  # 链家楼盘开盘信息
+    process.crawl(LianjiaLoupanSpider)  # 链家楼盘列表
+    process.crawl(LianjiaInfoSpider)  # 链家楼盘开盘信息
+    process.crawl(LianjiaCommentSpider)  # 链家楼盘评论信息
 
     # =================================================================
     # 启动 上面的 所有爬虫

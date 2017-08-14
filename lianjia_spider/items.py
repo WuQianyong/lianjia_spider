@@ -31,6 +31,14 @@ class Lianjia_openinfo(Item):
     fqname = Field()
     fqbuild = Field()
 
+class Lianjia_commentItem(Item):
+    luopan_id = Field()
+    info = Field()
+    words = Field()
+    num = Field()
+    time = Field()
+    star = Field()
+    like = Field()
 
 class Lianjia_infoItem(Item):
     luopan_id=Field()

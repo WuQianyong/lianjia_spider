@@ -13,7 +13,7 @@ from scrapy.spiders import Spider
 from lianjia_spider.items import LianjiaSpiderItem
 
 
-class Lianjia(Spider):
+class LianjiaLoupanSpider(Spider):
     name = 'lianjia'
 
     start_urls = [
